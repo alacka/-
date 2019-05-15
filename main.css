@@ -1,0 +1,50 @@
+/******************************  Здесь в корне картинка
+
+css/admin_css/main.css
+
+
+
+*************************/
+
+#myfor img {  
+    max-width: 100%;
+}
+#myfor p{
+	cursor: move;
+	display: inline-block;
+    margin-right: 5px;
+    position: relative;
+    max-width: 260px;
+    max-width: 100%;
+}
+#myfor p span {
+    background: url("ico-delete.png") repeat scroll 0 0 transparent;
+    cursor: pointer;
+    padding: 8px;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+}
+
+#myfor p span:hover{
+	/*box-shadow*/
+	-webkit-box-shadow:0 0 2px #F8947F,0 0 1px #D06C57 inset;
+	-moz-box-shadow:0 0 2px #F8947F,0 0 1px #D06C57 inset;
+	box-shadow:0 0 2px #F8947F,0 0 1px #D06C57 inset;
+	/*border-radius*/
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border-radius:20px;
+}
+
+.clear{
+	clear:both;
+}
+#wrap-afm_params hr {
+    margin: 20px 0;    
+}
+#wrap-afm_params #post-body-content > form{
+    padding: 0 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
