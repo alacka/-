@@ -1,0 +1,15 @@
+<?
+$images = get_post_meta(get_the_ID(), 'interier', true);
+if ( $images ) :
+if ( ! is_array( $images ) )
+$images = array( $images );     
+foreach ( $images as $value) :
+$src = wp_get_attachment_image_url( $value , 'large' );
+if ( !$src ) continue; 
+?>
+            
+	 
+<img src="<?php echo $src ?>" />
+
+                      
+<?php endforeach; endif; ?>
