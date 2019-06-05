@@ -39,6 +39,11 @@ function dvt_get_images_post( $post_id=0, $size_img = "thumb-67", $size_link = "
 add_action( 'add_meta_boxes', 'add_dvt_upload_meta_box_interier' );  
 	
 function add_dvt_upload_meta_box_interier() {     
+
+global $post;
+if ( 'foobar.php' == get_post_meta( $post->ID, '_wp_page_template', true ) ) {
+
+
     add_meta_box(
         'dvt_upload_meta_box_interier',
         __('Слайдер','dvt'),
@@ -46,7 +51,12 @@ function add_dvt_upload_meta_box_interier() {
         'page',
         'normal',
         'high'
-    );    
+    );  
+
+}
+
+
+
 }  
 
 add_action( 'add_meta_boxes', 'add_dvt_upload_meta_box_portfolio' );  
